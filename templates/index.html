@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Monitor</title>
+</head>
+<body onload="setTimeout(function() { location.reload(); }, 30000)">
+    <h1>Website Monitor</h1>
+    <p>Uptime: {{ uptime_percentage }}%</p>
+    <p>Downtime: {{ downtime_percentage }}%</p>
+    <img src="{{ url_for('status') }}" alt="Uptime plot">
+</body>
+</html>
